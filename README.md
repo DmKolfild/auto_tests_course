@@ -1,33 +1,33 @@
-## Автоматизация тестирования с помощью Selenium и Python
-#### Ссылка на [курс и условия задач](https://stepik.org/course/575/syllabus) (Stepic).
+## Automate testing with Selenium and Python
+#### Link to [course and task conditions](https://stepik.org/course/575/syllabus) (Stepic).
 
 ___
 
-**Шаги по подготовке окружения:**
+**Steps to prepare the environment:**
 
-1. Создать виртуальное окружение: **python -m venv selenium_env**
-
-
-2. Активировать виртуальное окружение (консоль): **activate.bat**
+1. Create a virtual environment: **python -m venv selenium_env**
 
 
-3. Восстанавливаем список пакетов для нового окружения: **pip install -r requirements.txt**
+2. Activate the virtual environment (console): **activate.bat**
 
 
-**lesson2_2_step8_file_path.txt** - обращение к файлу из **lesson2_2_step8_file_path.py**
+3. Restoring the list of packages for the new environment: **pip install -r requirements.txt**
 
 
-**pytest.ini** - регистрация меток pytest
+**lesson2_2_step8_file_path.txt** - accessing a file from **lesson2_2_step8_file_path.py**
 
 
-**Обозначения названий файлов:**
+**pytest.ini** - registering pytest tags
 
-* "lesson" - код скопирован из примера к уроку и дописан \ код написан полностью мной 
 
-* "example" - код скопирован из пример
+**File name designations:**
 
-* "test" - автотесты 
+* "lesson" - the code was copied from the example to the lesson and added \ the code was written entirely by me
 
-* "lesson\example2_5_step4" - номер модуля \ номер подмодуля \ номер шага
+* "example" - code copied from example
 
-* "fixture\waits\mark\..." - дополнительное описания \ изученная тема
+* "test" - autotests 
+
+* "lesson\example2_5_step4" - module number \ submodule number \ step number
+
+* "fixture\waits\mark\..." - additional descriptions \ topic studied
