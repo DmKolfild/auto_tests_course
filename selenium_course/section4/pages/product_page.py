@@ -12,5 +12,13 @@ class ProductPage(BasePage):
         first_message = self.text_of_element(*ProductPageLocators.FIRST_MESSAGE_ABOUT_ADDING_TO_THE_BASKET)
         price_of_product = self.text_of_element(*ProductPageLocators.PRICE_OF_PRODUCT)
         third_message = self.text_of_element(*ProductPageLocators.THIRD_MESSAGE_ABOUT_ADDING_TO_THE_BASKET)
-        assert (price_of_product in third_message
-                and header_of_product in first_message), "Name of item is not presented in the basket's message"
+        assert (price_of_product == third_message
+                and header_of_product == first_message), "Item is not presented in the basket's message"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_disappear_of_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should disappear"
