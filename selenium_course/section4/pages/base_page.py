@@ -11,6 +11,10 @@ class BasePage():
         self.url = url
         self.browser.implicitly_wait(timeout)
 
+    def go_to_basket_page(self):
+        button_view_basket = self.browser.find_element(*BasePageLocators.BUTTON_VIEW_BASKET)
+        button_view_basket.click()
+
     def go_to_login_page(self):
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         login_link.click()
@@ -58,7 +62,14 @@ class BasePage():
         except NoAlertPresentException:
             print("No second alert presented")
 
-    def text_of_element(self, how, what):
+    def get_language_of_page(self):
+        try:
+            language = self.browser.find_element(*BasePageLocators.HTML_WHOLE_PAGE).get_attribute('lang')
+        except NoSuchElementException:
+            return False
+        return language
+
+    def get_text_of_element(self, how, what):
         try:
             text = self.browser.find_element(how, what).text
         except NoSuchElementException:
