@@ -8,8 +8,10 @@ class BasePageLocators():
     HTML_WHOLE_PAGE = (By.XPATH, "//html")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
+
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
 
 class LoginPageLocators:
     LOGIN_EMAIL = (By.CSS_SELECTOR, "#id_login-username")
@@ -19,6 +21,7 @@ class LoginPageLocators:
     REGISTRATION_PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTRATION_SUBMIT = (By.CSS_SELECTOR, "[name='registration_submit']")
 
+
 class ProductPageLocators:
     BUTTON_ADD_TO_BASKET = (By.CSS_SELECTOR, "[value='Add to basket']")
     HEADER_OF_PRODUCT = (By.CSS_SELECTOR, ".product_main h1")
@@ -26,6 +29,7 @@ class ProductPageLocators:
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
     FIRST_MESSAGE_ABOUT_ADDING_TO_THE_BASKET = (By.CSS_SELECTOR, "#messages div.alert:first-child strong")
     THIRD_MESSAGE_ABOUT_ADDING_TO_THE_BASKET = (By.CSS_SELECTOR, "#messages div.alert:last-child strong")
+
 
 class BasketPageLocators:
     MESSAGE_ABOUT_EMPTY = (By.CSS_SELECTOR, "#content_inner p")

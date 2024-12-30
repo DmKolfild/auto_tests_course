@@ -1,5 +1,3 @@
-from multiprocessing.resource_tracker import register
-
 from .base_page import BasePage
 from .locators import LoginPageLocators
 

@@ -25,6 +25,7 @@ empty_message_in_different_languages = {
     "zh-cn": "Your basket is empty.",
 }
 
+
 class BasketPage(BasePage):
     def should_be_message_about_empty(self):
         actual_message_about_empty = self.get_text_of_element(*BasketPageLocators.MESSAGE_ABOUT_EMPTY)
