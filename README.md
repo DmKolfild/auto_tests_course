@@ -31,4 +31,3 @@ ___
 * "lesson\example2_5_step4" - module number \ submodule number \ step number
 
 * "fixture\waits\mark\..." - additional descriptions \ topic studied
-
