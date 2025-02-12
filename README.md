@@ -7,9 +7,7 @@ ___
 
 1. Create a virtual environment: **python -m venv selenium_env**
 
-
 2. Activate the virtual environment (console): **activate.bat**
-
 
 3. Restoring the list of packages for the new environment: **pip install -r requirements.txt**
 
@@ -31,4 +29,3 @@ ___
 * "lesson\example2_5_step4" - module number \ submodule number \ step number
 
 * "fixture\waits\mark\..." - additional descriptions \ topic studied
-
